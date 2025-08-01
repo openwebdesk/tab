@@ -34,6 +34,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: var(--st_bg0);
+    font-family: var(--st_font_fam);
     color: var(--st_fg1);
     display: flex;
     flex-direction: row;
@@ -48,19 +49,24 @@ body {
 
         &>.tab {
             position: relative;
+            padding: .5em;
 
-            &:hover>.tooltip {
-                display: block;
+            &:hover {
+                backdrop-filter: brightness(1.5);
+
+                &>.tooltip {
+                    display: block;
+                }
             }
 
             &>.tooltip {
                 display: none;
                 position: absolute;
-                left: 150%;
+                left: 120%;
                 top: 5px;
                 background-color: var(--st_bg1);
                 border-radius: var(--st_br1);
-                padding: .5em;
+                padding: .3em .7em;
                 text-align: center;
                 min-width: 80px;
             }
