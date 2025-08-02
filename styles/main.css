@@ -96,7 +96,7 @@ div#tab_contents {
     height: 100%;
     width: 100%;
 
-    &>.terminal_logs {
+    &>#terminal_logs {
         padding: 1em;
     }
 
