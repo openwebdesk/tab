@@ -1,0 +1,132 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Material Symbols Rounded';
+    font-style: normal;
+    src: url("assets/icons.woff2") format('woff2');
+}
+
+:root {
+    --outln: 1px solid rgba(128, 128, 128, 0.173);
+}
+
+.icn {
+    font-family: 'Material Symbols Rounded';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    display: inline-block;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-variation-settings: 'FILL' 0;
+    transition: font-variation-settings 0.3s ease;
+}
+
+.entire_tab {
+    background-image: url(https://images.unsplash.com/photo-1765476608471-c30c09564def?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.header_tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.subcont_search {
+    padding: 2em;
+    border-radius: 2em;
+    box-shadow: 0 3px 6px #00000012;
+    backdrop-filter: blur(0em);
+    transition: .5s;
+    color: #ffffffab;
+    &:hover {
+        
+    box-shadow: 0 5px 10px #00000047;
+    backdrop-filter: blur(1em);
+    color: #ffffff;
+    }
+}
+
+.search_cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .3em;
+    background-color: #ffffff1c;
+    border-radius: 2em;
+    border: var(--outln);
+    box-shadow: 0 2px 3px #00000025;
+
+    &>* {
+        padding: .3em 1em;
+    }
+
+    &>input {
+        color: inherit;
+        background-color: transparent;
+        border: 0;
+        font-size: inherit;
+        font: inherit;
+        outline: 0;
+    }
+
+    .btn {
+        padding: .3em;
+        background: #ffffff1f;
+        border-radius: 2em;
+        margin: 8px;
+        font-size: 1.4em;
+        cursor: pointer;
+    border: var(--outln);
+        transition: .2s;
+
+        &:hover {
+            background-color: #ffffff47;
+        }
+    }
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: .8em;
+
+    &>.time_w {
+        align-items: baseline;
+        gap: .5em;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+
+        #time_nums {
+            font-size: 5em;
+        }
+    }
+
+    .date {
+        text-align: center;
+        font-size: 1em;
+    }
+}
